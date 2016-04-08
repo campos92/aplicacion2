@@ -1,0 +1,448 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('imagenes/atlixco3.jpg','imagenes/atixco4.jpg','imagenes/atlixco5.jpg','imagenes/atlixco1.jpg','imagenes/atlixco2.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="a">
+  <h1>Semana Santa</h1>
+ </div>
+  <div>
+    <img src="imagenes/semana_santa.jpg" width="100%" height="36%">
+ </div>
+ <div>
+ 
+ <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+      <li class="ui-first-child ui-lastt-child">
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Significado de la Semana Santa</h2>
+       </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Domingo de Pascua</h2>
+        </a>
+      </li>
+            <li class="ui-first-child ui-last-child">
+        <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Como se establece la Semana Santa</h2>
+        </a>
+      </li>
+            <li class="ui-first-child ui-last-child">
+        <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Celebracion en Atlixco</h2>
+        </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Iztapalapa</h2>
+        </a>
+      </li>
+     <li class="ui-first-child ui-last-child">
+        <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Vaticano</h2>
+        </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Jeruzalem</h2>
+        </a>
+      </li>
+            <li class="ui-first-child ui-last-child">
+        <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Popayán</h2>
+        </a>
+      </li>
+   </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+      <img src="imagenes/persona_rosa.png" width="46" height="46">
+   </div>
+   <div>
+     <h4>Aplicacion Dos</h4>
+     <h4>Vanessa Fuentes Campos</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>EL SIGNIFICADO DE LA SEMANA SANTA</h1>
+     </div>
+    <div data-role="content" align="center">
+     <div>
+        <h2>La Semana Santa es una observación religiosa que se enfoca en la muerte y resurrección de Jesucristo. Esta celebración cristiana ocurre durante la temporada de la Pascua y es de suma importancia porque es cuando se recuerdan los eventos principales que forman la base de esta fe. La Semana Santa comienza con el Domingo de Ramos y termina el domingo de resureccion.</h2>
+        <br>
+        <h2>DOMINGO DE RAMOS</h2>
+        </br>
+        <h3>Se celebra la entrada triunfal de Jesús en Jerusalén. Es un anticipo de la Pascua. Los tradicionales ramos son los protagonistas. La primera lectura de la Pasión. Primeras procesiones populares. </h3>
+      </div>
+  </div>
+      <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagen</h1>
+    <div>
+    <p>Domingo de Ramos:
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/significado1.jpg" width="49%" height="35%">
+ </div>
+ </div>
+ </div>
+ <div data-role="content" align="center">
+     <div>
+        <br>
+        <h2>JUEVES SANTO</h2>
+        </br>
+        <h3> Es el día en que se celebra la ültima Cena en que Cristo instituyó la Eucaristía. Es el día del Lavatorio de los pies (sobre esto versa el Evangelio), de la atención especial a los pobres, del Amor Fraterno. Los pasos y procesiones se vuelcan en estas significaciones y empiezan a avanzar, ya en la noche, el misterio del Viernes Santo.</h3>
+    </div>
+  </div>
+     <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagen</h1>
+    <div>
+    <p>Jueves Santo:
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/significado2.jpg" width="56%" height="34%">
+ </div>
+ </div>
+ </div>
+  <div data-role="content" align="center">
+     <div>
+        <br>
+        <h2>VIERNES SANTO</h2>
+        </br>
+        <h3>Este día constituye el núcleo central de la Semana Santa. Es el día del máximo dolor y de la muerte de Jesús. Es día de riguroso luto y no se celebra misa sino un rito de oración. Se lee la Pasión según san Juan, se reza por todas las causas en una continua ceremonia de arrodillarse (Flectamus genua) y levantarse (Levate), y en el centro de la celebración está la solemne adoración de la Cruz: “He aquí el leño de la Cruz del que pendió la salvación del mundo”. “Venid , adorémoslo”. Hoy es el segundo gran día de las procesiones en que se vuelca el dolor por la muerte de Cristo y el dolor de su madre.</h3>
+    </div>
+  </div>
+     <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagen</h1>
+    <div>
+    <p>Viernes Santo:
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/significado3.jpg" width="54%" height="33%">
+ </div>
+ </div>
+ </div>
+   <div data-role="content" align="center">
+     <div>
+        <br>
+        <h2>SÁBADO SANTO</h2>
+        </br>
+        <h3>Este día propiamente no hay culto oficial. Es día de luto por la muerte del Salvador. Continúa durante el día la visita de los monumentos, la celebración del Vía crucis y otras prácticas piadosas. Al anochecer empieza la gran Vigilia Pascual, que en su primera parte (bendición el fuego nuevo y del agua, lecturas, letanías, profesión de fe y Bautizos) corresponde propiamente al Sábado santo; pero la Misa de Gloria, solemnísima, con volteo de campanas y llena de aleluyas, corresponde a la celebración pascual de la Resurrección.</h3>
+     </div>
+  </div>
+     <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagen</h1>
+    <div>
+    <p>Sabado Santo:
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/significado4.jpg" width="53%" height="35%">
+ </div>
+ </div>
+ </div>
+ <div data-role="content" align="center">
+     <div>
+        <br>
+        <h2>DOMINGO DE PASCUA Ó DE RESURRECCIÓN</h2>
+        </br>
+        <h3>La alegría iniciada en la misa de la Vigilia Pascual, que siempre es después de las 12 de la noche, la primera hora del domingo, se prolonga durante toda la mañana. Al mediodía vuelve a celebrarse una Misa solemnísima para celebrar la Resurrección. Aleqh CristoV aneste (Alezé Jristós aneste), En verdad, Cristo ha resucitado. Ese es el saludo pascual en la iglesia ortodoxa.</h3>
+    </div>
+  </div>
+     <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagen</h1>
+    <div>
+    <p>Domingo de Resureccion:
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/significado5.jpg" width="53%" height="33%">
+   </div>
+   </div>
+   </div>
+ 
+    <div data-role="footer" data-theme="a">
+     <h4>Vanessa Fuentes Campos</h4>
+    </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>DOMINGO DE PASCUA</h1>
+   </div>
+   <div data-role="content" align="center">
+     <div>
+       <h2>El "Domingo de Pascua" o tambien llamado "Domingo de Resureccion" es la fiesta central del cristianismo, en la que se conmemora, de acuerdo con los evangelios canónicos, la resurrección de Jesús al tercer día después de haber sido crucificado.
+La Pascua marca el final de la Semana Santa, en la que se conmemora la crucifixión y muerte de Jesús. A la Semana Santa le sigue un período de cincuenta días llamado Tiempo pascual, que termina con el Domingo de Pentecostés.</h2>
+    </div>
+  </div>
+      <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagenes</h1>
+    <div>
+    <p>Domingo de Pascua:
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/pascua2.jpg" width="52%" height="31%">
+ </div>
+ </div>
+     <div data-role="footer" data-theme="a">
+        <h4>Vanessa Fuentes Campos</h4>
+     </div>
+   </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>COMO SE ESTABLECE LA SEMANA SANTA</h1>
+  </div>
+     <div data-role="content" align="center">
+       <div>
+          <h2>La Pascua es una fiesta que varía de año a año en relación con nuestros calendarios, pues está basada en el calendario Judío que se guía por la luna. El día central para calcular la Pascua y la cuaresma es el día de la Resurrección del Señor. Para saber la fecha de la cuaresma y su inicio, el miércoles de ceniza, debemos contar 40 días hacia atrás desde el domingo anterior al domingo de Resurrección (domingo de ramos o de palmas). Después del domingo de Resurrección se cuentan 40 días hasta la Ascensión (aunque la fiesta se celebra el Domingo siguiente); una semana después de la Ascensión se celebra  Pentecostés (aunque bíblicamente ocurre a los 50 días de la Resurrección).</h2>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Como se escoge la fecha:</h1>
+    <div>
+    <p>Esta fecha se escoge a partir de una fórmula establecida por el Emperador Romano Constantino el Grande y el Concilio de Nicea en 325 d. C. Usted puede usar la fórmula para verificar la fecha de Pascua cada año.
+    <br>
+    </div>
+ </div>
+ </div>
+    <div data-role="footer" data-theme="a">
+        <h4>Vanessa Fuentes Campos</h4>
+    </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>CELEBRACIÓN EN ATLIXCO</h1>
+   </div>
+<div data-role="content" align="center">
+     <div>
+        <br>
+        <h2>La Conmemoración de Semana Santa en el municipio de Atlixco:</h2>
+        </br>
+        <h3>1.-LOS ENGRILLADOS son hombres que para pagar una penitencia o agradecer un milagro, recorren más de 3 kilómetros de calles del municipio, en su camino deben ir descalzos, cargando en sus hombros cadenas de más de 100 kilos, con espinas incrustadas en su cuerpo, vistiendo únicamente una capucha y un calzoncilllo negro</h3>
+     </div>
+  </div>
+     <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagen</h1>
+    <div>
+    <p>Engrillados
+    <br>
+    </div>
+ <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/atlixco1.jpg',1)"><img src="imagenes/semana_santa.jpg" width="300" height="168" id="Image23"></a></div>
+ </div>
+ </div>
+ <div data-role="content" align="center">
+     <div>
+        <br>
+        <h2>Las Alfombras:</h2>
+        </br>
+        <h3>2.-Durante la Semana Santa es tradición elaborar alfombras representando figuras folclóricas y religiosas. Estas artesanías son realizadas con aserrín, flor de corozo, rosas flore margaritas entre otros.Esta costumbre es resultado de una mezcla de tradiciones de diferentes lugares que han conseguido perdurar a través del tiempo, desde la llegada de los conquistadores y los evangelistas hasta nuestros días, perdurando como tradición propia de la religión católica, según sus orígenes.</h3>
+     </div>
+  </div>
+     <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagen</h1>
+    <div>
+    <p>Alfombras
+    <br>
+    </div>
+ <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/atlixco2.jpg',1)"><img src="imagenes/semana_santa.jpg" width="300" height="168" id="Image24"></a></div>
+ </div>
+ </div>
+  <div data-role="content" align="center">
+     <div>
+        <br>
+        <h2>Domingo de Ramos:</h2>
+        </br>
+        <h3>3.- El Domingo de Ramos da comienzo a la Semana Santa, este día rememora la Entrada de Jesús en Jerusalén. De todo este simbolismo parte toda la tradición cristiana, ya que en recuerdo a ello se celebra la bendición de las palmas y las ramas de olivo.</h3>
+     </div>
+  </div>
+     <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagen</h1>
+    <div>
+    <p>Palmas
+    <br>
+    </div>
+ <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/atlixco3.jpg',1)"><img src="imagenes/semana_santa.jpg" width="300" height="168" id="Image25"></a></div>
+ </div>
+ </div>
+  <div data-role="content" align="center">
+     <div>
+        <br>
+        <h2>Sabado Santo</h2>
+        </br>
+        <h3>4.- En el pasado en algunas partes del país se acostumbraba celebrar el Sábado Santo arrojando cubetadas de agua.1 Es una costumbre que no es autorizada por las autoridades católicas.</h3>
+     </div>
+  </div>
+     <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagen</h1>
+    <div>
+    <p>Cubetada de agua:
+    <br>
+    </div>
+ <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/atixco4.jpg',1)"><img src="imagenes/semana_santa.jpg" width="300" height="168" id="Image26"></a></div>
+ </div>
+ </div>
+  <div data-role="content" align="center">
+     <div>
+        <br>
+        <h2>Domingo de Resurección:</h2>
+        </br>
+        <h3>5.- Se celebra con una Misa solemne en la cual se enciende el cirio pascual, que simboliza a Cristo resucitado, luz de todas las gentes.
+En algunos lugares, muy de mañana, se lleva a cabo una procesión que se llama “del encuentro”. En ésta, un grupo de personas llevan la imagen de la Virgen y se encuentran con otro grupo de personas que llevan la imagen de Jesús resucitado, como símbolo de la alegría de ver vivo al Señor.</h3>
+     </div>
+  </div>
+     <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagen</h1>
+    <div>
+    <p>Resurección:
+    <br>
+    </div>
+ <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','imagenes/atlixco5.jpg',1)"><img src="imagenes/semana_santa.jpg" width="300" height="168" id="Image27"></a></div>
+ </div>
+ </div>
+ 
+<div data-role="footer" data-theme="a">
+    <h4>Vanessa Fuentes Campos</h4>
+   </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>CELEBRACIÓN EN IZTAPALAPA</h1>
+   </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Los habitantes de Iztapalapa, una de las 16 delegaciones de la Ciudad de México, representan la pasión de Cristo desde hace 169 años.
+La escenificación de la Semana Santa surgió a raíz de una epidemia de cólera que afectó a la zona en 1843, habitada entonces por unas 20,000 personas, en su mayoría indígenas, de acuerdo con el cronista de Iztapalapa, Jorge de León.
+Los habitantes de la zona hicieron la promesa de emprender una procesión al Cerro de la Estrella si la peste acababa.
+Cuando la epidemia cesó, los vecinos del lugar hicieron una peregrinación con imágenes de vírgenes y santos, y dos años después se celebró la primera escenificación teatral de La pasión de Jesucristo</h2></div>
+      <img src="imagenes/iztapalapa3.jpg" width="40%" height="34%">
+      <img src="imagenes/iztapalapa2.jpg" width="39%" height="31%">
+      <img src="imagenes/iztapalapa1.jpg" width="48%" height="34%">
+    </div>
+   <div data-role="footer" data-theme="a">
+       <h4>Vanessa Fuentes Campos</h4>
+    </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>CELEBRACIÓN EN EL VATICANO</h1>
+   </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Ese día se conmemora cuando Jesús entró triunfalmente en Jerusalén, aclamado como un rey por la gente con ramas y palmas de olivos que cortó de los árboles que se encontraban al lado del camino. 
+Tradicionalmente, el Papa comparte la celebración de ese domingo con los jóvenes, porque fueron justamente los chicos hebreos los que lo recibieron con mayor entusiasmo.</h2></div>
+      <img src="imagenes/vaticano1.jpg" width="46%" height="33%">
+      <img src="imagenes/vaticano3.jpg" width="45%" height="33%">
+      <img src="imagenes/vaticano2.jpg" width="50%" height="29%">
+  </div>
+   <div data-role="footer" data-theme="a">
+       <h4>Vanessa Fuentes Campos</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>CELEBRACIÓN EN JERUZALEM</h1>
+   </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Una emocionante celebración de imágenes y sonidos engloba gran parte de la ciudad vieja, en la que cristianos locales y peregrinos comienzan a celebrar la semana más importante del año: la Semana Santa. Si para los cristianos de todo el mundo estos siete días son un acontecimiento especial, en Jerusalén son ciertamente únicos, pues es aquí donde tuvieron lugar los importantes sucesos que se celebran. </h2></div>
+      <img src="imagenes/jeruzalem1.jpg" width="48%" height="33%">
+      <img src="imagenes/jeruzalem3.jpg" width="40%" height="33%">
+      <img src="imagenes/jeruzalem2.jpg" width="49%" height="29%">
+  </div>
+   <div data-role="footer" data-theme="a">
+       <h4>Vanessa Fuentes Campos</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>CELEBRACIÓN EN POPAYÁN</h1>
+   </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>La Semana Santa de Popayán es una celebración religiosa en la ciudad de Popayán, Colombia, de la pasión, muerte y resurrección de Jesucristo. La conmemoración incluye solemnes y multitudinarias procesiones que se vienen realizando ininterrumpidadamente desde el siglo XVI,desde la noche del Viernes de Dolores hasta la del sábado santo.
+En estas procesiones están presentes imágenes de madera talladas por las escuelas artísticas de Sevilla, Granada, Andalucía, Quito, Italia, Francia y Popayán. Las efigies sobre andas o muebles con aditamentos especiales, como plataformas de madera con barrotes cargables, permiten representar los diferentes episodios narrados en los Evangelios, relativos a la pasión, Crucifixión, Muerte y Resurrección de Jesucristo.</h2></div>
+      <img src="imagenes/popayan1.jpg" width="41%" height="35%">
+      <img src="imagenes/popayan2.jpg" width="45%" height="35%">
+      <img src="imagenes/popayan3.jpg" width="50%" height="39%">
+  </div>
+   <div data-role="footer" data-theme="a">
+       <h4>Vanessa Fuentes Campos</h4>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
